@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { FaHome } from "react-icons/fa";
-import { FcAbout } from "react-icons/fc";
+import { IoPersonCircle } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 
@@ -50,7 +50,7 @@ const Header = () => {
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><FaHome size='25'/>Home</button>
     </Link>
     <Link to='about'>
-    <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><FcAbout size='25'/>About Me</button>
+    <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><IoPersonCircle size='25'/>About Me</button>
     </Link>
     <Link to='stories'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><MdWork size='25'/>My Works</button>

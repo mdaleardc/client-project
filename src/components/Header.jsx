@@ -45,7 +45,7 @@ const Header = () => {
     </nav>
     {
       isOpen &&
-    <div className='container sm:hidden w-2/5 h-[100vh] bg-gray-800 flex flex-col gap-6 justify-center text-white absolute top-[3rem] right-0 z-0'>
+    <div className='container sm:hidden w-2/5 h-[90vh]  bg-gradient-to-tr from-gray-900 to-gray-600 flex flex-col gap-6 justify-center text-white absolute top-[3rem] right-0 z-0'>
     <Link to="/" className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><FaHome size='25'/>Home</button>
     </Link>

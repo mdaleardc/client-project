@@ -23,16 +23,16 @@ const Header = () => {
     <h1 className='text-2xl font-black cursor-pointer text-[#0ff] border-[2px] rounded-full py-[3px] px-[1px]'>S<span className='text-[#f0e]'>W</span></h1>
     </Link>
     <div className='container hidden  sm:grid grid-cols-6 justify-between items-center text-white'>
-    <Link to="/" className='col-start-3'>
+    <Link to="/" className='col-start-3 hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium'>Home</button>
     </Link>
-    <Link to='about'>
+    <Link to='/about' className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium'>About Me</button>
     </Link>
-    <Link to='stories'>
+    <Link to='/stories' className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium'>My Works</button>
     </Link>
-    <Link to='contact'>
+    <Link to='/contact' className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium'>Contact</button>
     </Link>
     </div>
@@ -46,16 +46,16 @@ const Header = () => {
     {
       isOpen &&
     <div className='container sm:hidden w-2/5 h-[100vh] bg-gray-800 flex flex-col gap-6 justify-center text-white absolute top-[3rem] right-0 z-0'>
-    <Link to="/">
+    <Link to="/" className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><FaHome size='25'/>Home</button>
     </Link>
-    <Link to='about'>
+    <Link to='about' className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><IoPersonCircle size='25'/>About Me</button>
     </Link>
-    <Link to='stories'>
+    <Link to='stories' className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><MdWork size='25'/>My Works</button>
     </Link>
-    <Link to='contact'>
+    <Link to='contact' className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><RiContactsFill size='25'/>Contact</button>
     </Link>
     </div>

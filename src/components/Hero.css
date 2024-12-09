@@ -28,8 +28,8 @@
 .profile::after, .profile::before {
   content: "";
   position: absolute;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
   background-image:conic-gradient(#00FF3E, #CBFF00, #FF000A, #FB00FF, #00FFBA) ;
   top: 50%;
   left: 50%;

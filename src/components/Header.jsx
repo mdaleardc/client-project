@@ -18,7 +18,7 @@ const Header = () => {
   
   return (
     <>
-    <nav className='w-full h-[3rem] max-w-4/6 mx-auto px-4 flex flex-rows justify-between items-center bg-gray-700 to-0 z-10'>
+    <nav className='w-full h-[3rem] max-w-4/6 mx-auto px-4 flex flex-rows justify-between items-center bg-gray-700 fixed top-0 z-10'>
     <Link to="/">
     <h1 className='text-2xl font-black cursor-pointer text-[#0ff] border-[2px] rounded-full py-[3px] px-[1px]'>S<span className='text-[#f0e]'>W</span></h1>
     </Link>

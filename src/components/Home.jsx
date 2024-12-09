@@ -5,7 +5,7 @@ const Home = () => {
   
   return (
     <>
-    <div className='mt-[1rem]'>
+    <div className='mt-[3rem]'>
     <Hero />
     </div>
     </>

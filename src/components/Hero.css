@@ -1,0 +1,44 @@
+.intro {
+  position: relative;
+  color: white;
+}
+.intro::after, .intro::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 7px);
+  height: calc(100% + 7px);
+  background-image:conic-gradient(red, yellow, green, indigo, blue, red) ;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 10px;
+}
+.intro::before {
+  filter: blur(1.5rem);
+  opacity: 0.8;
+}
+
+
+
+.profile {
+  position: relative;
+  color: white;
+}
+.profile::after, .profile::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background-image:conic-gradient(#00FF3E, #CBFF00, #FF000A, #FB00FF, #00FFBA) ;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 50%;
+  
+}
+.profile::before {
+  filter: blur(1rem);
+  opacity: 0.9;
+}

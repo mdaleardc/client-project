@@ -31,10 +31,10 @@ const Footer = () => {
       <p className='flex flex-row items-center pb-2 gap-2'><FaSquarePhone size='20'/> <a href="mailto:writername@example.com">writername@example.com</a></p>
       <p className='flex flex-row items-center pb-2 gap-2'><MdMail size='20'/> <a href='tel:+880 1234567890'>+880 1234567890</a></p>
       <div class="flex gap-4 mt-2">
-          <a href="#" aria-label="Twitter"><FaSquareXTwitter size='25' className='text-[#0ee] cursor-pointer hover:text-[#f0e]'/></a>
-        <a href="#" aria-label="Instagram"><FaSquareInstagram size='25' className='text-[#0ee] cursor-pointer hover:text-[#f0e]'/></a>
-         <a href="#" aria-label="LinkedIn"><FaLinkedin size='25' className='text-[#0ee] cursor-pointer hover:text-[#f0e]'/></a>
-         <a href="#" aria-label="Facebook"><FaSquareFacebook size='25' className='text-[#0ee] cursor-pointer hover:text-[#f0e]'/></a>
+        <div className='bg-white mt-[5px] ml-[4px] relative w-[15px] h-[15px]'><a href="#" aria-label="XTwitter"><FaSquareXTwitter size='25' className='text-black cursor-pointer hover:text-[#0ee] absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]'/></a></div>
+        <a href="#" aria-label="Instagram"><FaSquareInstagram size='25' className='text-[#Df2A7B] cursor-pointer hover:text-[#0ee]'/></a>
+        <a href="#" aria-label="LinkedIn"><FaLinkedin size='25' className='text-[#0a66c2] cursor-pointer hover:text-[#0ee]'/></a>
+        <a href="#" aria-label="Facebook"><FaSquareFacebook size='25' className='text-[#1877f2] cursor-pointer hover:text-[#0ee]'/></a>
       </div>
     </div>
   </div>

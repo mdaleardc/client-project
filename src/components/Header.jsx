@@ -1,7 +1,8 @@
 import { useState } from "react";
+import profileIcon from "../assets/profile-icon.png";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross2 } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 import { FaHome } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
@@ -37,15 +38,19 @@ const Header = () => {
     </Link>
     </div>
     <div className='sm:hidden text-white' onClick={openMenu}>
-    {
-    isOpen ? <RxCross2 size='25'/> :
     <GiHamburgerMenu size='25'/>
-    }
     </div>
     </nav>
     {
       isOpen &&
-    <div className='container sm:hidden w-2/5 h-[50%] rounded-bl-md  bg-blue-500 flex flex-col gap-6 justify-center text-white fixed top-[3rem] right-0 z-20'>
+    <div className='sm:hidden w-2/5 h-screen rounded-bl-md  bg-blue-500 fixed top-0 right-0 z-20'>
+    <div className='container flex flex-col gap-6 justify-center text-white'>
+    <div className='mt-3 mx-2'>
+    <RxCross1 size='25' onClick={openMenu}/>
+    </div>
+    <div className='profile mx-auto my-2'>
+    <img src={ profileIcon } alt='profile picture' className='w-[100px] h-[100px] bg-white rounded-full'/>
+    </div>
     <Link to="/" className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><FaHome size='25'/>Home</button>
     </Link>
@@ -58,6 +63,7 @@ const Header = () => {
     <Link to='contact' className='hover:text-[#f03]'>
     <button className='cursor-pointer text-xl font-medium flex flex-row gap-2 mx-[1rem]'><RiContactsFill size='25'/>Contact</button>
     </Link>
+    </div>
     </div>
     }
     </>
